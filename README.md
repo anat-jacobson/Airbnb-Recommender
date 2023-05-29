@@ -8,21 +8,13 @@ Anat Jacobson is available on [github (anat-jacobson)](https://github.com/anat-j
 
 
 ```
-Modeled_Homes-Phase_2
-├── AJ Index Copy.ipynb
-├── code
-│  ├── __init__.py
-│  └── features.py
+Airbnb Recommendations-Capstone
 ├── data
-│  ├── column_names.md
-│  ├── kc_house_data.csv
-│  ├── King_County_Zip_Codes.csv
-│  └── zips_5_mile.csv
-├── img
+│  ├── listings.csv
+│  ├── reviews.zip.csv
+├── images
 │  └── (resource images)
-├── index.ipynb
-├── individual_notebooks
-│  └── (scratch files)
+├── Airbnb_Reccomendations_Collab_Modelings.ipynb
 ├── presentation.pdf
 ├── LICENSE
 └── README.md
