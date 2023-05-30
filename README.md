@@ -1,6 +1,6 @@
 # Airbnb-Recommender
 
-![Airbnb_logo.jpg](images/Airbnb_logo.png)
+![Airbnb_logo.jpg](Images/Airbnb_logo.png)
 
 # Milan Airbnb Recommender
 Creating a recommendation system for individuals who have stayed previously at Milan Airbnb and are wishing to at a new one. 
