@@ -118,7 +118,7 @@ Thank you!
 - https://wellsr.com/python/convert-text-to-emojis-and-vice-versa-in-python/#:~:text=To%20convert%20emojis%20in%20the,token%20with%20the%20corresponding%20text.
 ---
 # For Further Information
-My process is available in [this jupyter notebook](./index.ipynb) or abbreviated in [this presentation document](./presentation.pdf).
+My process is available in [this jupyter notebook](./index.ipynb) or abbreviated in [this presentation document](./Milan_Airbnb_Presentation.pdf).
 
 Anat Jacobson is available on [github (anat-jacobson)](https://github.com/anat-jacobson) and via [email (anatabigail@gmail.com)](mailto:anatabigail@gmail.com)  
 
@@ -128,10 +128,17 @@ Airbnb Recommendations-Capstone
 ├── data
 │  ├── listings.csv
 │  ├── reviews.zip.csv
+│  ├── export_reviews.csv   
+│  ├── export_listings.csv   
+│  └── final_df_export.csv
 ├── images
+│  ├── (model images) 
 │  └── (resource images)
-├── Airbnb_Reccomendations_Collab_Modelings.ipynb
-├── presentation.pdf
+├── Airbnb_Recommendations_Collab_Modelings.ipynb
+├── Milan_Airbnb_Presentation.pdf
+├── environment.yml
+├── requirements.txt    
+├── model.sav   
 ├── LICENSE
 └── README.md
 ```
