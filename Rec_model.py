@@ -19,9 +19,6 @@ st.sidebar.caption('Presentation [here](https://github.com/anat-jacobson/)')
 st.title('Milan Airbnb Recommendation System')
 st.header('')
 
-side_button = st.sidebar.button('See more!')
-if side_button:
-    st.sidebar.write('Sidebar button was pressed')
 
 export_review = pd.read_csv('Data/export_review.csv', index_col=0)
 
@@ -34,12 +31,10 @@ final_df_export = pd.read_csv('Data/final_df_export.csv', index_col= 'listing_id
 model = pickle.load(open('model.sav', 'rb'))
 
 #function
-def rec_airbnbs_info():
+def rec_airbnbs_info(reviewer_input, n_recs):
     
-    user = int(input('reviewer_id: '))
-    n_recs = int(input('How many airbnb recommendations do you want? '))
     
-    have_reviewed = list(export_review.loc[user, 'listing_id'])
+    have_reviewed = list(export_review.loc[reviewer_input, 'listing_id'])
     not_reviewed = final_df_export.copy()
     not_reviewed = not_reviewed.drop_duplicates(subset=['listing_id'])
     not_reviewed = not_reviewed.set_index('listing_id')
@@ -68,11 +63,19 @@ def rec_airbnbs_info():
     return not_reviewed.head(n_recs)
 
 
-st.sidebar.subheader('Content based recommendation system')
-st.sidebar.write('Existing airbnb users looking for milan airbnbs they might enjoy.')
+st.sidebar.subheader('collaborative filtering based recommendation system')
+st.sidebar.write('Existing airbnb users looking for Milan airbnbs they might enjoy.')
 
-st.title("Milan Airbnbs")
-st.subheader("Sidebar for Options")
 
-airbnb_listings = ['Existing Reviewers', 'Similar Airbnbs']
+airbnb_listings = ['Existing Reviewers'] #, 'Similar Airbnbs']
 listing = st.sidebar.radio('Navigation', airbnb_listings)
+
+
+if listing == 'Existing Reviewers':
+    st.header("Existing Reviewer")
+    reviewer_input = st.text_input("Please enter your airbnb reviewer ID")
+    n_recs = st.number_input("How many recommendations would you like in Milan?.", max_value=20)
+    rec_button = st.button("Get recommendations")
+    if rec_button:
+        results = rec_airbnbs_info(reviewer_input, n_recs)
+        st.table(results)
