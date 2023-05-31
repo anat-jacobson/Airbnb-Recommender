@@ -1,5 +1,3 @@
-# Airbnb-Recommender
-
 ![Airbnb_logo.jpg](Images/Airbnb_logo.png)
 
 # Milan Airbnb Recommender
