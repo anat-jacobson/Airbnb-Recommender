@@ -42,7 +42,7 @@ def rec_airbnbs_info(reviewer_input, n_recs):
     
     not_reviewed = not_reviewed.reset_index()
 
-    not_reviewed['est_rating'] = not_reviewed['listing_id'].apply(lambda x: model.predict(user, x).est)
+    not_reviewed['est_rating'] = not_reviewed['listing_id'].apply(lambda x: model.predict(reviewer_input, x).est)
     not_reviewed = not_reviewed.sort_values(by = 'est_rating', ascending = False)
     not_reviewed = not_reviewed.drop(columns=['id'])
     not_reviewed = not_reviewed.merge(export_listings, on = 'listing_id', how = 'left')
@@ -67,7 +67,7 @@ st.sidebar.subheader('collaborative filtering based recommendation system')
 st.sidebar.write('Existing airbnb users looking for Milan airbnbs they might enjoy.')
 
 
-airbnb_listings = ['Existing Reviewers'] #, 'Similar Airbnbs']
+airbnb_listings = ['Existing Reviewers']
 listing = st.sidebar.radio('Navigation', airbnb_listings)
 
 
