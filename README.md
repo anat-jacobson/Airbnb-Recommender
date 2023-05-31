@@ -7,38 +7,6 @@ By: Anat Jacobson
 
 --- 
 
-
-# Contents [fixing this]
-<l></l>
-
-<span style="font-size:1.2em;">
-
-- <a href="#Overview">Overview</a>
-
-- <a href="#Introduction and Business Case">Introduction and Business Case</a>  
-
-- <a href="#Business Understandings">Business Understandings</a> 
-    - <a href="#Applications">Applications</a>
-    
-    - <a href="#Methodology">Methodology</a>
-- <a href="##Data Exploration and Analysis">Data Exploration and Analysis</a>
-
-- <a href="#Recommendation System">Recommendation System</a>
-    
-    - <a href="#Surprise Data">Surprise Data</a>
-    
-    - <a href="#Baselines">Baselines</a>
-    
-    - <a href="#SVD">SVD </a>
-    
-    - <a href="#NMF">NMF</a>
-    
-    - <a href="#SVD++">SVD++</a>
-    
-- <a href="#Recommendation Function">Recommendation Function</a>
-       
-- <a href="#Conclusion and Next Steps">Conclusion and Next Steps</a>
-
 ### Overview 
 
 In this notebook I will be creating a recommedation system for Milan Airbnb users. This project is based on data from previous visitors and reviewers of Milan's airbnb. The data has been used to create a various recommendation models and provide valuable insight into whether an airbnb would be liked or recommended by an individual or not. This be extremely helpful for both guests and hosts when looking into where to stay next so that they could have a personalized experience that they could enjoy based on past experiences. 
@@ -116,7 +84,7 @@ Thank you!
 - https://wellsr.com/python/convert-text-to-emojis-and-vice-versa-in-python/#:~:text=To%20convert%20emojis%20in%20the,token%20with%20the%20corresponding%20text.
 ---
 # For Further Information
-My process is available in [this jupyter notebook](./index.ipynb) or abbreviated in [this presentation document](./Milan_Airbnb_Presentation.pdf).
+My process is available in [this jupyter notebook](./Airbnb_Recommendations_Collab_Modelings.ipynb) or abbreviated in [this presentation document](./Milan_Airbnb_Presentation.pdf).
 
 Anat Jacobson is available on [github (anat-jacobson)](https://github.com/anat-jacobson) and via [email (anatabigail@gmail.com)](mailto:anatabigail@gmail.com)  
 
