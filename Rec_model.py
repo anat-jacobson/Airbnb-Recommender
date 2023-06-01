@@ -70,12 +70,10 @@ st.sidebar.write('Existing airbnb users looking for Milan airbnbs they might enj
 airbnb_listings = ['Existing Reviewers']
 listing = st.sidebar.radio('Navigation', airbnb_listings)
 
-
-if listing == 'Existing Reviewers':
-    st.header("Existing Reviewer")
-    reviewer_input = st.text_input("Please enter your airbnb reviewer ID")
-    n_recs = st.number_input("How many recommendations would you like in Milan?.", max_value=20)
-    rec_button = st.button("Get recommendations")
-    if rec_button:
-        results = rec_airbnbs_info(reviewer_input, n_recs)
-        st.table(results)
+st.header("Existing Reviewer")
+reviewer_input = st.text_input("Please enter your airbnb reviewer ID")
+n_recs = st.number_input("How many recommendations would you like in Milan?.", max_value=20)
+rec_button = st.button("Get recommendations")
+if rec_button:
+    results = rec_airbnbs_info(reviewer_input, n_recs)
+    st.table(results)
