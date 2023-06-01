@@ -74,7 +74,7 @@ SVD model compares to our baseline (highlighted in green). Although it might not
 ![user_recs.jpg](Images/User_Recs.png)
 ![user_reviews.jpg](Images/User_Reviews.png)
 
-This user highly 2 apartments that were whole homes, host responded within an hour and accomodated 2 people. The top rated from the recommendation system similarly showed 2 people apartments with high response rate from host.
+This user reviewed 2 apartments that were whole homes, host responded within an hour and accomodated 2 people. The top rated from the recommendation system similarly showed 2 people apartments with high response rate from host.
     
 --- 
 # Conclusion and Next Steps:
@@ -83,7 +83,7 @@ My recommendation model aims to simplify the Airbnb selection process for indivi
 
 To enhance the predicted ratings and improve the overall user experience, I am exploring several directions for further development. These iterations include:
 
-- Runnig more grid searches and use different model types to improve the RMSE for the best predictions
+- Running more grid searches and use different model types to improve the RMSE for the best predictions
 - Add in a additional options to function to allow the user to get recommended airbnb for a specific characteristics of an airbnb (such as size, ammenities, neighborhood).
 - Look further into a content based filtering in addition to our collaborative model.
 - Add recommendation ratings to the Airbnb interface (deploy website or app with streamlit)
